@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<div class="wrapper">
+		<form action="main.html">
+			<h1>Регистрация</h1>
+
+			<!--Получение имени пользователя-->
+			<div class="input-box">
+				<input id="name" type="text" placeholder="Имя пользователя" required>
+				<i class='bx bxs-user-detail' ></i>
+			</div>
+
+			<!--Получение логина-->
+			<div class="input-box">
+				<input id="login" type="text" placeholder="Логин" required>
+				<i class='bx bxs-user'></i>
+			</div>
+
+			<!--Получение пароля-->
+			<div class="input-box">
+				<input id="password" type="password" placeholder="Пароль" required>
+				<i class='bx bxs-lock-open-alt'></i>
+			</div>
+
+			<!--Получение подтверждения пароля-->
+			<div class="input-box">
+				<input type="password" placeholder="Подтвердите пароль" required>
+				<i class='bx bx-lock-open-alt' ></i>
+			</div>
+
+			<!--Кнопка подтвержения-->
+			<button id="submit" type="submit" class="btn">Создать</button>
+
+			<!--Ссылка если уже имеется аккаунт-->
+			<div class="action-link">
+				<p>Уже есть аккаунт? <a href="login.html">Войдите!</a></p>
+			</div>
+
+		</form>
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
